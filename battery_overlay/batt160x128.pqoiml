@@ -1,0 +1,29 @@
+scaling pamcut -pad 0 0 174 250 | pamflip -r180 | pamcut -pad 0 0 1280 960 | pamflip -r180 | pamscale -xysize 160 128
+
+fps 1:2
+
+label empty
+file 0.png
+label twenty
+file 20.png
+if A<10 goto blink
+if A<40 goto twenty
+
+label fourty
+file 40.png
+if A<40 goto twenty
+if A<60 goto fourty
+
+label sixty
+file 60.png
+if A<60 goto fourty
+if A<80 goto sixty
+
+label eighty
+file 80.png
+if A<80 goto sixty
+
+label full
+if A<90 goto eighty
+file 100.png
+goto full
