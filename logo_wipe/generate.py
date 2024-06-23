@@ -109,7 +109,7 @@ def make_wipe(FN):
     image = read_image(FN);
     ret += [ IMG(image) ]
     ret += [ FPS(24, 1) ]
-    for i in range(W, -WW, -2):
+    for i in range(W, -WW, -3):
         ret += [ IMG(wipe(image, i)) ]
     return ret
 
