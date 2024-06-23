@@ -1,6 +1,6 @@
 scaling pamcut -pad 0 0 174 250 | pamflip -r180 | pamcut -pad 0 0 1280 960 | pamflip -r180 | pamscale -xysize 160 128
 
-fps 1:2
+fps 2:1
 
 label empty
 file 0.png
