@@ -1,0 +1,6 @@
+file=vc.pqf
+layer
+file=batt.pqf
+A=battery
+layer
+file=logo.pqf
